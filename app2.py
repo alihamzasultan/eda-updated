@@ -274,8 +274,8 @@ def main():
                     latest_chat = st.session_state.conversation[-1]
                     
                     # Style for the latest response
-                    user_style = "background-color: #FFffff; padding: 8px; border-radius: 10px; color: black; max-width: 80%;"
-                    bot_style = "background-color: #FFFfff; padding: 8px; border-radius: 10px; color: black; max-width: 80%;"
+                    user_style = "background-color: #D3D3D3; padding: 8px; border-radius: 10px; color: black; max-width: 80%;"
+                    bot_style = "background-color: #D3D3D3; padding: 8px; border-radius: 10px; color: black; max-width: 80%;"
 
                     # Display user's latest message without an icon
                     st.markdown(f"""
