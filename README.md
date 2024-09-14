@@ -36,23 +36,7 @@ Experience data visualization like never before with interactive Plotly charts. 
    ```
 
 4. **Access App:**
-   Open the app in your web browser by navigating to (https://smarteda.streamlit.app/).
-
-## Screenshots
-
-![Screenshot 1](screenshots/1.PNG)
-
-*Interactive Dashboard showcasing EDA insights.*
-
-![Screenshot 2](screenshots/2.PNG)
-
-*Data Preprocessing Interface with streamlined functionalities.*
-
-![Screenshot 1](screenshots/3.PNG)
-
-*Interactive  visuals.*
-
-![Screenshot 2](screenshots/4.PNG)
+   Open the app in your web browser by navigating to (https://smartdataanalyst.streamlit.app/).
 
 *prediction functionalities.*
 
