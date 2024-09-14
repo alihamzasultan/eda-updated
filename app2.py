@@ -41,10 +41,27 @@ HARD_CODED_PROMPT = (
 state = {'show_result': False, 'knn_inputs': {}, 'user_inputs': {}}
 
 def read_uploaded_file(file):
-    if file.name.endswith('.csv'):
-        return pd.read_csv(file)
-    elif file.name.endswith('.xlsx'):
-        return pd.read_excel(file)
+    encodings = ['utf-8', 'latin1', 'iso-8859-1', 'cp1252']
+    
+    try:
+        if file.name.endswith('.csv'):
+            return pd.read_csv(file, nrows=10000)
+        elif file.name.endswith('.xlsx'):
+            return pd.read_excel(file, nrows=10000)
+    except UnicodeDecodeError:
+        # Try alternative encodings
+        file.seek(0)  # Reset file pointer
+        for encoding in encodings:
+            try:
+                if file.name.endswith('.csv'):
+                    return pd.read_csv(file, nrows=10000, encoding=encoding)
+                elif file.name.endswith('.xlsx'):
+                    return pd.read_excel(file, nrows=10000)
+            except UnicodeDecodeError:
+                continue
+        # If none of the encodings worked, return None
+        return None
+
     return None
 
 def upload_file():
@@ -95,7 +112,7 @@ def main():
         st.write(data.head())  # Display the entire dataset
         
         # Slider for selecting the number of rows
-        num_rows = st.sidebar.slider("Select number of rows to use", min_value=100, max_value=max_num_rows, value=1000)
+        num_rows = st.sidebar.slider("Select number of rows to use", min_value=100, max_value=max_num_rows, value=10000)
         
         st.write("Data overview (first {} rows):".format(num_rows))
         st.write(data.head(num_rows))  # Display the selected number of rows
