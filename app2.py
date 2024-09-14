@@ -304,8 +304,8 @@ def main():
                     conversation_reversed = reversed(st.session_state.conversation[:-1])  # Exclude the latest chat
                     for i, chat in enumerate(conversation_reversed):
                                 # Style for other responses
-                                user_style = "background-color: #353535; padding: 8px; border-radius: 10px; color: white; max-width: 80%;"
-                                bot_style = "background-color: #353535; padding: 8px; border-radius: 10px; color: white; max-width: 80%;"
+                                user_style = "background-color: black; padding: 8px; border-radius: 10px; color: white; max-width: 80%;"
+                                bot_style = "background-color: black; padding: 8px; border-radius: 10px; color: white; max-width: 80%;"
 
                                 # Display user's previous message
                                 st.markdown(f"""
