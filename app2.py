@@ -18,7 +18,7 @@ import google.generativeai as genai
 st.markdown('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">', unsafe_allow_html=True)
 
   # Replace with your actual API key
-api_key = "AIzaSyCQYNe42dTLNZrS9Wdi6dYqEW19zN1s_8M"
+api_key = "AIzaSyDSdQssjbwc-I-4aHQyi2MS-etlbKD92mY"
 
     # Check if the API key is provided
 if api_key == "YOUR_API_KEY_HERE":
