@@ -239,7 +239,7 @@ def main():
 
                     # Section for uploading CSV or Excel in the sidebar
 
-                if st.button("🔎"):
+                if st.button("Ask🔎"):
                     if user_prompt:
                         with st.spinner("Generating response..."):
                             # Ensure data is uploaded
