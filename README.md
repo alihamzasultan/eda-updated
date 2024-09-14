@@ -1,4 +1,4 @@
-# EDA Web App
+# EDA Web App with AI-Bot
 
 ## Project Overview
 
