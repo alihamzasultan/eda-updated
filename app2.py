@@ -108,9 +108,7 @@ def main():
 
     if data is not None:
         max_num_rows = len(data)
-        st.write("Data overview:")
-        st.write(data.head())  # Display the entire dataset
-        
+
         # Slider for selecting the number of rows
         num_rows = st.sidebar.slider("Select number of rows to use", min_value=100, max_value=max_num_rows, value=10000)
         
