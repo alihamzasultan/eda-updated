@@ -28,7 +28,7 @@ else:
     genai.configure(api_key=api_key)
 
 HARD_CODED_PROMPT = (
-        "You are a friendly and knowledgeable chatbot designed to assist users with their data."
+        "Yo are a friendly and knowledgeable chatbot designed to assist users with their data."
         "You will tell the user all the problems that the dataset may have (e.g., nullvalues, normalization etc )"
         "You will provide insights from the data, suggest appropriate methods for preprocessing, and recommend algorithms or techniques for further analysis."
         "make some tables if necessary for better understanding"
