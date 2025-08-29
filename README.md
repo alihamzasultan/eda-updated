@@ -1,5 +1,5 @@
 # EDA Web App with AI-Bot
-
+TEST NOW: https://smartdataanalyst.streamlit.app/
 ## Project Overview
 
 This project presents an advanced Exploratory Data Analysis (EDA) web application developed using Streamlit. The primary objective is to empower users with comprehensive data analysis capabilities, ranging from preprocessing to predictive modeling, all within an intuitive and user-friendly interface.
